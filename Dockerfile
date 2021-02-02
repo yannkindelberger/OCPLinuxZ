@@ -1,3 +1,2 @@
-FROM registry.access.redhat.com/rhel7
-RUN yum  install podman -y
+FROM image-registry.openshift-image-registry.svc:5000/acme/podman
 RUN yum install maven git -y
