@@ -1,4 +1,3 @@
-FROM registry.access.redhat.com/ubi8/ubi
-RUN yum module enable -y container-tools
+FROM registry.access.redhat.com/ubi7/ubi
 RUN yum  install podman -y
 RUN yum install maven git -y
