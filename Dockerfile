@@ -1,4 +1,4 @@
-FROM image-registry.openshift-image-registry.svc:5000/acme/open-liberty
+FROM image-registry.openshift-image-registry.svc:5000/acme/open-liberty:20.0.0.12-full-java8-openj9-ubi
 # RUN yum install maven git -y
 # RUN sudo mkdir acme-air
 # RUN cd acme-air

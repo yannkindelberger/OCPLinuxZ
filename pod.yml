@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mypod
+  labels:
+    app: mayapp
+  namespace: acme
+spec:
+  containers:
+    - name: build
+      image: image-registry.openshift-image-registry.svc:5000/acme/ocp-linux-z-git
+      env :
+      - name: PATH
+        value: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+      tty: true
+      command :
+        - /bin/bash
