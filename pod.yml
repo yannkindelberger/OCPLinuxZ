@@ -13,5 +13,9 @@ spec:
       - name: PATH
         value: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
       tty: true
+      volume:
+        -name: dev
+        hostPath:
+          path: /dev/fuse
       command :
         - /bin/bash
