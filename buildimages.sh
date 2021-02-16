@@ -1,3 +1,4 @@
+podman login quay.io -u=abdouibm -p=Jssabdou0910!
 cd /acme-air/acmeair-mainservice-java
 podman build -t quay.io/abdouibm/acme-mainservice:latest --format docker -f Dockerfile .
 podman push quay.io/abdouibm/acme-mainservice:latest
